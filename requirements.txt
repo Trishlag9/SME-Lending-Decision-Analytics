@@ -7,3 +7,6 @@ pyarrow
 jupyter
 ipykernel
 joblib
+streamlit
+lightgbm
+statsmodels
