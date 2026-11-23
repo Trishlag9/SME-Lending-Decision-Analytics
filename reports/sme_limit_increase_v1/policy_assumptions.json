@@ -1,0 +1,61 @@
+{
+  "policy_version": "sme_limit_increase_v1",
+  "method": "Rule-based synthetic simulation",
+  "review_month_index": 23,
+  "screening": {
+    "maximum_deterioration_probability": 0.1,
+    "recent_utilization_minimum": 0.5,
+    "recent_utilization_maximum": 0.85,
+    "maximum_latest_utilization": 0.9,
+    "maximum_recent_dpd": 0,
+    "maximum_deposit_decline": 0.1,
+    "maximum_recent_overdrafts": 2,
+    "maximum_utilization_increase": 0.15
+  },
+  "sizing": {
+    "target_utilization": 0.65,
+    "maximum_increase_share": 0.25,
+    "revenue_limit_share": 0.3,
+    "round_down_to_rupees": 10000
+  },
+  "economics": {
+    "annual_interest_rate": 0.16,
+    "incremental_drawdown": 0.5,
+    "funding_cost_rate": 0.08,
+    "operating_cost_rate": 0.02,
+    "lgd": 0.45,
+    "allocated_equity_share": 0.1,
+    "minimum_pretax_roe": 0.15
+  },
+  "sensitivity_scenarios": [
+    {
+      "name": "Base",
+      "pd_multiplier": 1.0,
+      "funding_cost_rate": 0.08
+    },
+    {
+      "name": "Higher default risk",
+      "pd_multiplier": 1.5,
+      "funding_cost_rate": 0.08
+    },
+    {
+      "name": "Higher funding cost",
+      "pd_multiplier": 1.0,
+      "funding_cost_rate": 0.1
+    },
+    {
+      "name": "Combined downside",
+      "pd_multiplier": 1.5,
+      "funding_cost_rate": 0.1
+    }
+  ],
+  "limitations": [
+    "Synthetic data; no observed limit-increase outcomes.",
+    "Application PD and revenue are historical proxies.",
+    "Early warning probability is not a default PD.",
+    "Drawn balance is a simplified EAD proxy.",
+    "Pre-tax economics exclude undrawn capital and interest shortfalls.",
+    "The full decision pipeline has not been independently validated.",
+    "Provisional offers require updated credit assessment."
+  ]
+}

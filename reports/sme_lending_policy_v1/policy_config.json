@@ -1,0 +1,16 @@
+{
+  "policy_version": "sme_lending_policy_v1",
+  "selected_scenario": "65% target",
+  "approve_cutoff": 0.2467953241047732,
+  "decline_cutoff": 0.47396910392959724,
+  "cutoff_source": "Development-sample PD distribution",
+  "application_validation_accounts": 4500,
+  "pricing_assumptions": {
+    "lgd": 0.45,
+    "funding_cost_rate": 0.08,
+    "operating_cost_rate": 0.02,
+    "target_margin": 0.02
+  },
+  "pricing_scope": "Historically booked application-validation accounts",
+  "pricing_note": "Illustrative rates, not historical quoted rates"
+}

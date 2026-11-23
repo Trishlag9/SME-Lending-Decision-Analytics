@@ -1,2 +1,1 @@
-# SME-Lending-Decision-Analytics
-End-to-end SME credit risk, lending decisioning, pricing and portfolio monitoring project
+See [Project summary, results and limitations](PROJECT_SUMMARY.md).
