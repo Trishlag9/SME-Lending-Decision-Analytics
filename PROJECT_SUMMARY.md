@@ -23,6 +23,11 @@ module or assumption.
 
 ## Data and evaluation populations
 
+Notebook 01 now calls the recovered original add-on,
+`src/milestone1_booking_and_panel.py`, after generating the applicant portfolio.
+Run `python scripts/reproduce_data.py` for a non-destructive reproduction check
+of all four CSVs. See [data-generation details](docs/data_generation.md).
+
 - Application development: 10,500 applicants.
 - Application validation: 4,500 applicants.
 - Historically booked accounts: 9,887.
@@ -113,6 +118,9 @@ Displaying development-account results does not make them held-out
 evaluation results.
 
 ## Verification completed
+
+- Recovered generator reproduced all four committed datasets, comparing every
+  row and column with tight floating-point tolerance. Original data was not modified.
 
 - Applicant ID uniqueness and join checks.
 - Separate development and test accounts for early warning.

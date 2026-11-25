@@ -1,0 +1,20 @@
+{
+  "checked_at_utc": "2026-11-25T08:16:59.927857+00:00",
+  "reference_commit": "a20d9405275fb025428cecdfef309d120cacc7af",
+  "comparison": "all rows and columns, original ordering and dtypes, rtol=1e-12, atol=1e-8",
+  "status": "all_four_datasets_match",
+  "python": "3.12.14",
+  "dependencies": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.8",
+    "seaborn": "0.13.2"
+  },
+  "recovered_original_script_sha256": "b900612d17512e6b8c17142177e7fcd811e3373de65fddbbe77e9dc2c02da3d6",
+  "reference_csv_sha256": {
+    "sme_applicant_portfolio.csv": "1857893bc843044a0ca60f79e1811039add1c74a41d7ddf56b44a11a17e93efc",
+    "sme_behavioural_panel.csv": "39a9a53cf2ef417c20f2e8bbbcd4396a41d102b1f73dec5786bbf846be62b9ba",
+    "sme_booking_decision.csv": "961ca18b5a2541abb146fe039ec4cc620be30b787e6103152d6d83cef271ab2e",
+    "sme_onbook_portfolio.csv": "44065e307a1dc0256053b04ab3fa27a68027e0c524c0d697935c00dcb154d68a"
+  }
+}
